@@ -83,7 +83,7 @@
     .table{
         border-collapse: collapse;
         max-width: 100%;
-        order:-1;
+        order:2;
     }
     tr:nth-child(2n) {
         background-color: rgb(157, 97, 97);
@@ -101,6 +101,7 @@
         max-width: 100%;
         background-color: #f8f9fb;
         order:1;
+        margin:20px 0 20px 0;
     }
     .form{
         padding: 2px;
