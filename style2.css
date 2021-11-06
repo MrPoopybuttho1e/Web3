@@ -1,118 +1,266 @@
-@media (min-width: 568px) {
-    .list-nav {
-        flex-direction: row;
-        list-style: none;
+@media screen and (max-width: 700px){
+    .body{
+        margin: 0;
+        font-family: Tahoma;
     }
 
-    table {
-        order: 0;
+
+    .topFlexBox{
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+    }
+    .topnav{
+        display:flex;
+        flex-direction: column;
+        text-align: start;
+        font-size:1.2rem;
+        background-color: #41525a;
+    }
+    .topnav a {
+        flex-basis: 33%;
+        color: #f2f2f2;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #a19595;
+        color: white;
+    }
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #41525a;
+        height: 75px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: end;
+    }
+    .logo {
+        width: 65px;
+        height: 55px;
+    }
+    .name {
+        color: #fef6a4;
+        margin: 0;
+    }
+
+
+    .flexBox{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .refDiv{
+        background-color: #f8f9fb;
+        margin-top: 30px;
+    }
+    .ref{
+        font-size:1.2rem;
+    }
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    a:visited {
+        color: #b9b4b4;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ff3939;
+    }
+    .car{
+        width: 200px;
+    }
+
+
+    .table{
+        border-collapse: collapse;
+        max-width: 100%;
+    }
+    tr:nth-child(2n) {
+        background-color: rgb(157, 97, 97);
+    }
+    tr:nth-child(2n+1) {
+        background-color: rgb(180, 117, 110);
+
+    }
+    th {
+        background: #42555c;
+    }
+
+
+    .formDiv {
+        max-width: 100%;
+        background-color: #f8f9fb;
+    }
+    .form{
+        padding: 2px;
+    }
+
+
+    .footer {
+        background-color: #41525a;
+        height: 75px;
+        max-width: 100%;
+    }
+    .bottom {
+        float: right;
+        color: #fef6a4;
+        padding-right: 15px;
     }
 }
-*{
-    font-family: "Tahoma";
-}
-body {
-    background:url("background.jpg") no-repeat;
-    background-attachment: fixed;
-
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-a:visited {
-    color: #727171;
-    text-decoration: none;
-}
-a:hover {
-    color: #727171;
-}
-header {
-    display: flex;
-    margin: auto;
-    background-color: #b97c7c;
-    height: 165px;
-    width: 100%;
-    border-radius: 40px 10px;
-    box-shadow: 2px 4px 20px #201c1c;
-}
-.header-container {
-    margin: 18px;
-}
-.logo {
-    float: left;
-    width: 115px;
-    height:92px;
-    padding-top: 56px;
-    position: absolute;
-    left: 29px;
-}
-.name{
-    float: left;
-    margin-left: 30px;
-    padding: 0px ;
-    font-size: 50px;
-    font-weight: normal;
-    color: #fef6a4;
-}
-.topnav {
-    display: flex;
-    background-color: #41525a;
-    overflow: hidden;
-    max-width: 960px;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 2px 4px 20px #201c1c
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 5px;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.topnav a.active {
-    background-color: #a19595;
-    color: white;
-}
 
 
-table {
-    color: white;
-    border: 1px solid rgba(0, 0, 0, 0);
-    width: 600px;
-}
-table tr:nth-child(2n) {
-    background-color: rgb(157, 97, 97);
-}
-table tr:nth-child(2n+1) {
-    background-color: rgb(180, 117, 110);
-}
-th{
-    background: #42555c;
-    font-size: small ;
-}
-footer{
-    display: flex;
-    background-color: #705d63;
-    height: 95px;
-}
-.bottom {
-    margin: 0px;
-    float: right;
-    color: #cea893;
-    font-size: 15px;
-    font-weight: bold;
-    padding-right: 30px;
-}
-.template {
-    display: flex;
-    flex-direction: column;
-}
 
+@media (min-width: 701px) {
+    .body {
+        margin: 0;
+        font-family: Tahoma;
+    }
+
+
+    .topFlexBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .flexBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .refDiv {
+        width: 70vh;
+        background-color: #f8f9fb;
+        margin-top: 30px;
+    }
+
+    .car{
+        width: 400px;
+    }
+    .ref {
+        font-size: medium;
+    }
+
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #b9b4b4;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff3939;
+    }
+
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #41525a;
+        height: 149px;
+        width: 100%;
+        box-shadow: 2px 4px 20px #201c1c;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .logo {
+        width: 130px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .name {
+        color: #fef6a4;
+        font-size: 70px;
+        margin: 10px;
+    }
+
+
+    .topnav {
+        display: flex;
+        background-color: #41525a;
+        overflow: hidden;
+        width: 960px;
+        border-radius: 5px;
+        box-shadow: 2px 4px 20px #201c1c;
+        text-align: center;
+
+    }
+
+    .topnav a {
+        flex-basis: 33%;
+        color: #f2f2f2;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #a19595;
+        color: white;
+    }
+
+
+    .table {
+        border-collapse: collapse;
+        width: 70vh;
+    }
+
+    tr:nth-child(2n) {
+        background-color: rgb(157, 97, 97);
+    }
+
+    tr:nth-child(2n+1) {
+        background-color: rgb(180, 117, 110);
+
+    }
+
+    th {
+        background: #42555c;
+    }
+
+
+    .formDiv {
+        width: 70vh;
+        background-color: #f8f9fb;
+    }
+    .form{
+        padding: 10px;
+    }
+
+
+    .footer {
+        background-color: #41525a;
+        height: 95px;
+        width: 100%;
+    }
+
+    .bottom {
+        float: right;
+        color: #fef6a4;
+        font-size: 15px;
+        font-weight: bold;
+        padding-right: 15px;
+    }
+}
